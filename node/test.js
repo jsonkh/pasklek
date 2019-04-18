@@ -12,13 +12,12 @@ app.get('/send-calculation', (req, res) => {
     let options = {
         uri: 'http://192.168.10.229:3000/calculate',
         method: 'POST',
-        body: Buffer.from(JSON.stringify({
-            calculate: 'doit'
-        }))
+        body: "Det här är requestbody"
     }
+})
     request.post(options, (err, res, body) => {
         console.log('RESPONSE', body);
-        res.send(`RESPONSE${body}`)
+        res.send(`RESPONSE${body}`);
     })
 })
 
