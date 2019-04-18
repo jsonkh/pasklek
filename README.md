@@ -14,3 +14,7 @@ Vi försöker använda så många verktyg som möjligt för att åstadkomma så 
 ## Dokumentation
 
 Här ska vi placera vår dokumentation
+
+=> {
+
+}
