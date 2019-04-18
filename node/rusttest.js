@@ -1,15 +1,7 @@
-const express = requir('express');
-const yarn
-const rustLek = require('../rust/pkg/rustlek')
+const express = require('express');
 const app = express();
-import rustLek from 'rustLek';
-
-
-app.get('/', (req,res) => {
-    console.log('hej');
-    rustLek.greet();
-})
-
+const path = require('path')
+const fs = require('fs');
 app.get('/send-calculation', (req, res) => {
     let options = {
         uri: 'http://192.168.10.229:3000/calculate',
@@ -23,6 +15,12 @@ app.get('/send-calculation', (req, res) => {
     })
 })
 
+app.use('/', express.static('dist'))
+
+// app.use('*', (req, res) => {
+//     console.log(__dirname)
+//     res.sendFile(path.join(__dirname ,'../dist/index.html'));
+// })
 app.listen(9090, () => {
     console.log('Server listening on port 9090');
 })
