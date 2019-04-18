@@ -1,0 +1,7 @@
+{
+  "name": "rust",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pétur G. Hjartarson <petur.hjartarson@bimobject.com>",
+  "license": "MIT"
+}

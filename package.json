@@ -4,7 +4,7 @@
   "description": "Jag och Pétur beräknar något på extern enhet",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-modules node/test.mjs"
   },
   "repository": {
     "type": "git",

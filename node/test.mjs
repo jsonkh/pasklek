@@ -1,11 +1,13 @@
-const express = require('express');
-
+const express = requir('express');
+const yarn
+const rustLek = require('../rust/pkg/rustlek')
 const app = express();
-const request = require('request');
-const bodyParser = require('body-parser');
+import rustLek from 'rustLek';
+
 
 app.get('/', (req,res) => {
-    console.log('hej')
+    console.log('hej');
+    rustLek.greet();
 })
 
 app.get('/send-calculation', (req, res) => {
