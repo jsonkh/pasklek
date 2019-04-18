@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const request = require('request');
 const bodyParser = require('body-parser');
-app
+
 app.get('/', (req,res) => {
     console.log('hej')
 })
@@ -18,6 +18,7 @@ app.get('/send-calculation', (req, res) => {
     }
     request.post(options, (err, res, body) => {
         console.log('RESPONSE', body);
+        res.send(`RESPONSE${body}`)
     })
 })
 
