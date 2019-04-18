@@ -14,7 +14,7 @@ app.get('/send-calculation', (req, res) => {
         method: 'POST',
         body: "Det här är requestbody"
     }
-})
+
     request.post(options, (err, res, body) => {
         console.log('RESPONSE', body);
         res.send(`RESPONSE${body}`);
