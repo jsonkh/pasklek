@@ -1,0 +1,22 @@
+{
+  "name": "pasklek",
+  "version": "1.0.0",
+  "description": "Jag och Pétur beräknar något på extern enhet",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsonkh/pasklek.git"
+  },
+  "author": "love och petur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsonkh/pasklek/issues"
+  },
+  "homepage": "https://github.com/jsonkh/pasklek#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
