@@ -7,7 +7,8 @@ app.get("/", (req,res) => {
 })
 
 app.post("/calculate", (req,res) => {
-    return;
+    console.log("Body of the request", req.body);
+    res.send("Not doing any calculations at the moment, sorry, Please try again later");
 })
 
 app.listen(port, () => {
