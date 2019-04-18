@@ -4,7 +4,8 @@
   "description": "Jag och Pétur beräknar något på extern enhet",
   "main": "server/index.js",
   "scripts": {
-    "test": "node --experimental-modules node/test.mjs"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
   }
 }
